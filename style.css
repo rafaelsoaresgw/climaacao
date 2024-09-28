@@ -1,0 +1,726 @@
+/* ESTILO GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+body {
+    background-color: #000000;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+
+}
+
+section {
+    margin: 20px 0;
+    padding: 15px;
+   
+    border-radius: 5px;
+}
+
+h2 {
+    color: #00FF08; /* Cor do título */
+}
+
+p {
+    color: #fff; /* Cor desejada */
+}
+
+
+
+
+.flex {
+    display: flex;
+}
+
+header .btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00FF08;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* ESTILO DO CABEÇALHO */
+
+header {
+    padding: 40px 4%;
+
+}
+
+header>.interclasse {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #4e4c4c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header nav.menu-desktop a:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li {
+    display: inline-block;
+    padding: 0 70px;
+}
+
+
+
+
+/* Adicione o novo código abaixo das regras do cabeçalho */
+.btn-contato button {
+    padding: 15px 50px;
+    /* Ajuste o tamanho conforme desejado */
+    font-size: 20px;
+    /* Ajuste o tamanho da fonte conforme desejado */
+    font-weight: 600;
+    background-color: #00FF08;
+    color: #000000;
+    /* Adicione cor do texto para garantir visibilidade */
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+
+h2.titulo {
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+
+
+}
+
+
+h2.titulo span {
+    color: #00FF08;
+}
+
+
+h2 .metodologia {
+    align-items: center;
+}
+
+
+
+/* Estilo específico para a seção .content1 */
+.content1 {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content1 h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 20px 0;
+    margin-top: 40px; /* Adiciona espaço antes de cada título */
+    margin-bottom: 20px; /* Adiciona espaço após o título */
+}
+
+.content1 p {
+    margin-bottom: 50px; /* Espaço entre os parágrafos */
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center; /* Centraliza os parágrafos */
+}
+
+/* Estilos de mídia para garantir responsividade */
+@media screen and (max-width: 768px) {
+    .content1 {
+        padding: 15px;
+        margin: 10px;
+    }
+}
+
+
+
+
+
+
+button:hover,
+form .btn-enviar input:hover {
+    box-shadow: 0px 0px 8px #00ff08;
+    transform: scale(1.05);
+}
+
+
+
+/*ESTILO DO MENU MOBILE*/
+
+.btn-abrir-menu i{
+color: #00FF08;
+font-size: 40px;
+}
+
+.menu-mobile{
+    background-color: #000000;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .4s;
+}
+
+.menu-mobile.abrir-menu{
+    width: 70%;
+}
+
+
+.menu-mobile.btn-abrir-menu ~ .overlay-menu{
+    display: block;
+}
+
+
+.menu-mobile .btn-fechar{
+    padding: 20px 5%;
+}
+
+
+.menu-mobile .btn-fechar i{
+    color: #00FF08;
+    font-size: 30px;
+}
+
+
+.menu-mobile nav ul{
+    text-align: right;
+}
+
+
+.menu-mobile nav ul li a{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover{
+    background-color: #00FF08;
+    color: #000000;
+}
+
+
+.overlay-menu{
+    background-color: #000000c9;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+
+}
+
+/* ESTILO DO TOPO DO SITE */
+
+
+section .topo-do-site {
+    padding: 40px 4%;
+
+}
+
+section .topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1 {
+    color: #fff;
+    font-size: 42px;
+    line-height: 45px;
+}
+
+.topo-do-site .txt-topo-site h1 span {
+    color: #00FF08;
+}
+
+.topo-do-site .txt-topo-site p {
+    color: #fff;
+    margin: 40px 0;
+
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+
+/* ESTILO DAS ESPECIALIDADES */
+
+section.informações {
+    padding: 80px 4%;
+}
+
+section.informações .flex {
+    gap: 60px;
+}
+
+
+.informações .informações-box {
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+
+.informações .informações-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffff71;
+}
+
+.informações .informações-box i {
+    font-size: 60px;
+    color: #00FF08;
+}
+
+
+
+.informações .informações-box h3 {
+    font-size: 29px;
+    margin: 15px 0;
+}
+
+.img-sobre img {
+    max-width: 300px;
+    /* Defina o tamanho máximo desejado */
+    height: auto;
+    /* Isso garante que a altura seja ajustada automaticamente para manter a proporção */
+    margin-top: 20px;
+    /* Adiciona um espaçamento acima da imagem */
+    float: right;
+    /* Posiciona a imagem à direita */
+    margin-left: 70px;
+    /* Adiciona um espaçamento à esquerda da imagem */
+}
+
+
+/* ESTILO SOBRE */
+
+section.sobre {
+    padding: 40px 4%;
+
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+
+}
+
+.sobre .txt-sobre {
+    color: #fff;
+
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 20px;
+
+
+}
+
+.sobre .txt-sobre h2 span {
+    color: #00ff08;
+    display: block;
+}
+
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    border: none;
+    background-color: #00FF08;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+
+/*ESTILO DO PORTFOLIO*/
+
+section.projetos {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1f;
+
+}
+
+section.projetos .flex {
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-port:hover {
+    background-position: 100% 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000ab;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+}
+
+
+.overlay:hover {
+    opacity: 1;
+}
+
+
+
+/* ESTILO DO FORMULARIO DE CONTATO*/
+
+section.formulario {
+    padding: 80px 4%;
+    margin-top: 40px;
+    /* Adiciona margem acima do formulário */
+    margin-bottom: 40px;
+    /* Adiciona margem abaixo do formulário */
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    /* Aumenta o espaçamento entre os elementos do formulário */
+    margin-top: 40px;
+}
+
+/* Estilo para a fonte retangular com as pontas dobradas */
+form input,
+form textarea {
+    width: 100%;
+    background-color: #242424;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+form textarea {
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+
+form .btn-enviar input {
+    width: 120px;
+    background-color: #00FF08;
+    color: #000000;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+
+/*ESTILO DO RODAPÉ*/
+
+
+
+/* Estilo da imagem do rodapé */
+.logo-footer img {
+    max-width: 150px;
+    /* Defina o tamanho máximo desejado */
+    height: auto;
+    /* Isso garante que a altura seja ajustada automaticamente para manter a proporção */
+}
+
+/* Adicione um espaçamento entre os botões sociais no rodapé */
+.btn-social button {
+    margin-right: 10px;
+    /* Ajuste o espaçamento entre os botões conforme desejado */
+}
+
+
+
+footer {
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1f;
+
+
+}
+
+
+
+footer .flex {
+    justify-content: space-between;
+
+}
+
+footer .line-footer {
+    padding: 20px 0;
+
+}
+
+.borda {
+    border-top: 2px solid #00FF08;
+}
+
+footer .line-footer p i {
+    color: #00FF08;
+    font-size: 22px;
+}
+
+footer .line-footer p a {
+    color: #fff;
+}
+
+
+@media screen and (max-width: 1020px) {
+
+    /*CLASSES GERAIS*/
+
+    .flex {
+        flex-direction: column-reverse;
+    }
+
+
+    h2.titulo {
+        
+        font-size: 30px;
+     line-height: 34px;
+    
+    
+    }
+
+
+
+    /*CABEÇALHO*/
+
+    .menu-desktop,
+    .btn-contato {
+        display: none;
+    }
+
+    /*TOPO DO SITE*/
+
+
+
+
+    section .topo-do-site .flex {
+        gap: 40px;
+    }
+
+
+
+
+    section .topo-do-site {
+        padding: 20px 8%;
+
+    }
+
+
+    .topo-do-site h1 {
+
+        font-size: 30px;
+
+    }
+
+
+
+    .topo-do-site .img-topo-site img {
+        width: 100%;
+    }
+
+
+
+
+    /* ESTILO DAS INFORMAÇÕES */
+
+    section.informações {
+        padding: 80px 8%;
+    }
+
+
+
+
+    /*SOBRE*/
+
+
+    
+section.sobre {
+    padding: 40px 8%;
+
+}
+
+
+
+
+.sobre .txt-sobre h2 {
+    font-size: 34px;
+    line-height: 35px;
+   text-align: center;
+
+
+}
+
+
+.btn-social{
+    text-align: center;
+}
+
+
+
+.img-sobre img{
+    width: 100%;
+}
+
+
+
+/*SESSÃO PORTFÓLIO*/
+
+
+section.projetos {
+    padding: 80px 8%;
+    
+
+}
+
+
+.img-port {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+   
+}
+
+section.projetos .flex {
+    gap: 60px;
+}
+
+
+
+}
+
+section.projetos {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1f;
+
+}
+
+section.projetos .flex {
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-port:hover {
+    background-position: 100% 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000ab;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+}
+
+
+.overlay:hover {
+    opacity: 1;
+}
