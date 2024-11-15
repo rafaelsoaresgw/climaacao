@@ -731,13 +731,15 @@ html {
     scroll-behavior: smooth;
 }
 
-img {
-    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
-    height: auto; /* Mantém a proporção da imagem */
-    display: block; /* Impede que a imagem seja exibida como um elemento inline */
-    margin: 0 auto; /* Centraliza a imagem */
-}
+
+.imagem-responsiva {
+    max-width: 100%;
+    height: auto;
+  }
+  
 
 
+
+  
 
 
